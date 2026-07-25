@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design | Jared Sanchez</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 1s ease forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans antialiased overflow-x-hidden">
+
+    <div class="fixed inset-0 -z-10">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100"></div>
+
+        <div
+            class="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.04)_1px,transparent_1px)] bg-[size:40px_40px]">
+        </div>
+
+        <div class="absolute top-0 left-0 w-[700px] h-[700px] bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-[700px] h-[700px] bg-indigo-500/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <main class="fade-up max-w-5xl mx-auto px-6 py-16">
+
+        <a href="index.html"
+            class="inline-flex items-center px-4 py-2 rounded-xl bg-white border border-slate-200 shadow-md text-sm font-semibold hover:bg-slate-100 transition">
+            Back to Home
+        </a>
+
+        <section class="mt-10 bg-white/80 backdrop-blur-md border border-slate-200 rounded-3xl shadow-xl p-6 md:p-10">
+
+            <span
+                class="inline-block px-4 py-2 rounded-xl bg-blue-100 text-blue-700 text-xs font-bold tracking-widest uppercase">
+                Graphic Design
+            </span>
+
+            <h1 class="mt-5 text-4xl md:text-5xl font-black leading-tight">
+                Heritage Postage Stamp
+            </h1>
+
+            <p class="mt-5 text-lg text-slate-700 leading-relaxed max-w-3xl">
+                A creative stamp concept that celebrates cultural identity through visual storytelling. The composition,
+                color palette, and typography were designed to feel timeless while honoring heritage and tradition.
+            </p>
+
+            <div class="mt-8 rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
+                <img
+                    src="images/Heritage%20Postage%20Stamp%20Canva%20Size.jpg"
+                    alt="Heritage Postage Stamp design"
+                    class="w-full h-auto object-cover">
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
